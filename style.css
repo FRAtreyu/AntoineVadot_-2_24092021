@@ -1,16 +1,38 @@
-ul{
+body {
+    font-size: 1em;
+}
+
+h1 {
+    font-size: 1.5em;
+}
+
+h3 {
+    font-size: 1em;
+    text-align: center;
+    font-weight: normal;
+}
+
+ul {
     list-style-type: none;
 }
 
-header{
+a {
+    text-decoration: none;
+}
+
+header {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-.menu-link{
+footer {
     display: flex;
-    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
 }
+
+
+
 
 
