@@ -10,38 +10,49 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: flex-start;
+    align-items: center;
     margin: auto;
 
 }
 
 header {
     display: flex;
+    justify-content: flex-end;
     align-items: center;
-    justify-content: space-between;
     height: 100px;
-    width: 100%;
+    width: 90%;
 }
 
 
 main {
+    width: 100%;
     display: flex;
     flex-wrap: wrap;
-    justify-content: flex-start;
     margin: auto;
 
 }
 
 footer {
+    width: 100%;
     display: flex;
-    align-items: flex-end;
+    align-items: center;
     justify-content: space-around;
     height: 200px;
+    background-color: #F2F2F2;
+    margin-bottom: 30px;
+
+}
+
+.logo {
+    height: 50px;
+    position: absolute;
+    left: 10%;
+    top: 20px;
 
 }
 
 h1 {
-    width: 80%;
+    width: 90%;
     font-size: 1.5em;
 }
 
@@ -53,7 +64,7 @@ h2 {
 }
 
 h3 {
-    width: 80%;
+    width: 90%;
     font-size: 1em;
     font-weight: normal;
 }
@@ -67,19 +78,21 @@ a {
 }
 
 
-.logo {
-    height: 50px;
-}
-
-
-.popular {
+.menu {
     display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    width: 20%;
-    height: 750px;
-    margin: auto;
+    flex-direction: row;
 }
+
+.menu-link, .inscription {
+    margin-right: 30px;
+    padding-top: 15px;
+}
+
+.menu-link:hover{
+    border-top: 2px solid #0065FC;
+    text-decoration: #0065FC;
+}
+
 
 .activities {
     display: flex;
@@ -95,24 +108,27 @@ a {
     padding: 25px;
     border-radius: 20px;
     height: auto;
+    margin-bottom: 15px;
+    margin-right: 10px;
 }
 
 .rent {
-    width: 60%;
+    width: 65%;
+    min-width: 325px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-
 }
 
 .rent-item {
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
     background-color: white;
     border-radius: 20px;
     width: 30%;
     height: 40%;
-    min-width: 250px;
+    min-width: 275px;
     max-height: 300px;
     padding: 5px;
     margin: 5px;
@@ -121,37 +137,63 @@ a {
 .rent-image {
     object-fit: cover;
     object-position: center;
-    max-height: 50%;
+    height: 60%;
     margin: 5px;
     border-radius: 20px 20px 0 0;
 
 }
 
 .rent-description {
-    flex-wrap: nowrap;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
     width: 80%;
     height: 40%;
     margin: 5px;
 }
 
+.popular {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 25%;
+    min-width: 320px;
+
+}
+
 .popular-item {
     display: flex;
-    flex-wrap: wrap;
     flex-direction: row;
+    align-items: center;
     background-color: white;
     border-radius: 20px;
+    min-width: 300px;
+    max-height: 200px;
     margin: 10px;
     padding: 5px;
     width: 80%;
-    height: 40%;
+    height: 30%;
 }
 
 .popular-image {
-    width: 50%;
+    object-fit: cover;
+    object-position: center;
+    width: 35%;
+    height: 100%;
+    margin: 5px;
     border-radius: 20px 0 0 20px;
 
 }
 
+.popular-description{
+    height: 100%;
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin-left: 10px;
+
+}
 .activities-item {
     width: 20%;
     height: 45%;
@@ -162,7 +204,7 @@ a {
     display: flex;
     flex-wrap: wrap;
     margin: 15px;
-    width: 80%;
+    width: 90%;
 }
 
 .filter-button {
@@ -196,15 +238,13 @@ a {
     display: flex;
     align-items: center;
     justify-content: flex-start;
-    width: 80%;
     height: 30px;
-    border: 5px #F2F2F2;
 }
 
 .search-button {
     background-color: #0065FC;
     border-radius: 0 12px 12px 0;
-    padding: 10px;
+    padding: 12px;
     font-weight: bold;
     color: white;
     border: none;
@@ -219,9 +259,11 @@ a {
 
 #locationsearch {
     color: black;
-    padding: 12px;
+    padding: 10px;
     font-weight: bold;
     border: none;
+    border-top: 2px solid #F2F2F2;
+    border-bottom: 2px solid #F2F2F2;
 }
 
 .blue {
