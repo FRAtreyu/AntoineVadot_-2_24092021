@@ -1,8 +1,42 @@
+@font-face {
+    font-family: Raleway;
+    src: url("Raleway/Raleway-VariableFont_wght.ttf");
+}
+
 body {
+    font-family: Raleway, serif;
+    width: 80%;
     font-size: 1em;
+    display: flex;
+    flex-direction: column;
+
+}
+
+header {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    height: 100px;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+
+footer {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-around;
+    height: 200px;
+
 }
 
 h1 {
+
     font-size: 1.5em;
 }
 
@@ -20,18 +54,16 @@ a {
     text-decoration: none;
 }
 
-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+
+.logo {
+    height: 50px;
 }
 
-footer {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
+.rent, .popular{
+    background-color: #F2F2F2;
+    padding: 35px;
+    border-radius: 20px;
 }
-
 
 
 
