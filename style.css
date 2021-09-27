@@ -4,25 +4,26 @@
 }
 
 body {
-    font-family: Raleway, serif;
     width: 80%;
+    font-family: Raleway, serif;
     font-size: 1em;
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    margin: 15px;
 
 }
 
 header {
     display: flex;
     align-items: flex-start;
-    justify-content: space-between;
+    justify-content: space-around;
     height: 100px;
 }
 
 main {
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    flex-wrap: wrap;
     justify-content: center;
 
 }
@@ -36,13 +37,17 @@ footer {
 }
 
 h1 {
-
+    width: 80%;
     font-size: 1.5em;
 }
 
+h2 {
+    width: 100%;
+}
+
 h3 {
+    width: 80%;
     font-size: 1em;
-    text-align: center;
     font-weight: normal;
 }
 
@@ -59,12 +64,75 @@ a {
     height: 50px;
 }
 
-.rent, .popular{
+.rent, .popular {
     background-color: #F2F2F2;
     padding: 35px;
     border-radius: 20px;
 }
 
+.rent {
+    width: 70%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin: 15px;
 
 
+}
 
+.rent-item {
+    background-color: white;
+    border-radius: 20px;
+    width: 29%;
+    height: 30%;
+    margin: 10px;
+    padding: 5px;
+}
+
+.rent-image {
+    width: 100%;
+    height: fit-content;
+    border-radius: 20px 20px 0 0;
+}
+
+.search-form {
+    width: 80%;
+}
+
+.filter {
+    align-items: center;
+    display: flex;
+    margin: 15px;
+    width: 80%;
+}
+
+.filter-button {
+    display: flex;
+    align-items: center;
+    margin: 15px;
+    padding: 10px 10px 10px 0;
+    height: 30px;
+    border-radius: 30px;
+    border-color: #F2F2F2;
+    text-align: center;
+    background-color: white;
+}
+
+.icon {
+    padding: 8px;
+    margin-right: 5px;
+    border-radius: 30px;
+    background-color: #DEEBFF;
+    color: #0065FC;
+}
+
+.popular {
+    width: 20%;
+    margin: 15px;
+}
+
+.link-more {
+    justify-content: flex-end;
+    width: 100%;
+}
