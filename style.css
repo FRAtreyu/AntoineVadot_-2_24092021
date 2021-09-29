@@ -1,3 +1,5 @@
+
+
 @font-face {
     font-family: Raleway;
     src: url("Raleway/Raleway-VariableFont_wght.ttf");
@@ -20,7 +22,7 @@ header {
     justify-content: flex-end;
     align-items: center;
     height: 100px;
-    width: 100%;
+    width: 90%;
 }
 
 
@@ -66,40 +68,40 @@ h2 {
 h3 {
     width: 90%;
     font-size: 1em;
-    font-weight: normal;
+    font-weight: bold;
 }
 
 ul {
     list-style-type: none;
 }
 
-a {
+a:visited{
     text-decoration: none;
     color: black;
 }
 
+a{
+    text-decoration: none;
+}
 
 .menu {
     display: flex;
     flex-direction: row;
 }
 
-.menu-link a, .inscription {
-    margin-right: 30px;
-    padding-top: 15px;
-}
 
-.inscription {
+.inscription a{
     color: #0065FC;
     font-weight: bold;
+    padding: 5px;
 }
 
-
-.menu-link:visited {
-    color: black;
+.menu-link{
+    padding: 5px;
 }
 
 .menu-link a:hover {
+    padding-top: 15px;
     border-top: 2px solid #0065FC;
     color: #0065FC;
 }
