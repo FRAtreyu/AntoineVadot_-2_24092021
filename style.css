@@ -106,7 +106,7 @@ a {
 
 #rent, #popular {
     background-color: #F2F2F2;
-    padding: 25px;
+    padding: 1%;
     border-radius: 20px;
     height: auto;
     margin-bottom: 15px;
@@ -124,7 +124,7 @@ a {
 #popular {
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: flex-start;
     width: 25%;
     min-width: 320px;
 
@@ -149,7 +149,7 @@ a {
     display: flex;
     align-items: center;
     width: 100%;
-    height: 11%;
+    height: 5%;
 }
 
 .activities-title {
@@ -167,14 +167,29 @@ a {
     border-radius: 20px;
     border: solid 1px #F2F2F2;
     box-shadow: 1px 1px 10px #F2F2F2;
-    margin: 5px;
+    margin: 1%;
 }
 
 .rent-item {
+    height: 14%;
     max-height: 250px;
     width: 30%;
     min-width: 275px;
     padding: 5px;
+}
+
+@media screen and (min-width: 1761px){
+    .rent-item {
+        height: 41%;
+    }
+
+}
+
+@media screen and (min-width: 1150px) and (max-width: 1760px){
+    .rent-item {
+        height: 25%;
+    }
+
 }
 
 .activities-item {
@@ -185,7 +200,7 @@ a {
 
 @media screen and (min-width: 1000px) {
     .big {
-        min-height: 90%;
+        min-height: 93%;
         max-height: 100px;
     }
 
@@ -266,10 +281,10 @@ a {
     box-shadow: 1px 1px 10px #F2F2F2;
     min-width: 300px;
     max-height: 150px;
-    margin: 1% auto 1% auto;
-    padding: 2.5%;
+    margin: 1%;
+    padding: 5px;
     width: 80%;
-    min-height: 27%;
+    height: 28%;
 }
 
 .popular-image {
