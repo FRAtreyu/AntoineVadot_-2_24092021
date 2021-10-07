@@ -19,7 +19,8 @@ body {
 
 header {
     display: flex;
-    justify-content: flex-end;
+    justify-content: space-between;
+    flex-wrap: wrap-reverse;
     align-items: center;
     height: 100px;
     width: 90%;
@@ -45,12 +46,42 @@ footer {
 
 }
 
-.logo {
+.logo{
     height: 50px;
-    position: absolute;
-    left: 10%;
-    top: 20px;
+}
 
+.logo-div{
+
+}
+
+.menu-div{
+    display: flex;
+}
+
+.menu {
+    display: flex;
+    flex-direction: row;
+}
+
+.inscription{
+    vertical-align: middle;
+}
+
+.inscription a{
+    color: #0065FC;
+    font-weight: bold;
+    padding: 5px;
+
+}
+
+.menu-link{
+    padding: 5px;
+}
+
+.menu-link a:hover {
+    padding-top: 15px;
+    border-top: 2px solid #0065FC;
+    color: #0065FC;
 }
 
 h1 {
@@ -86,26 +117,9 @@ a{
     color: black;
 }
 
-.menu {
-    display: flex;
-    flex-direction: row;
-}
 
-.inscription a{
-    color: #0065FC;
-    font-weight: bold;
-    padding: 5px;
-}
 
-.menu-link{
-    padding: 5px;
-}
 
-.menu-link a:hover {
-    padding-top: 15px;
-    border-top: 2px solid #0065FC;
-    color: #0065FC;
-}
 
 #rent, #popular {
     padding: 1%;
