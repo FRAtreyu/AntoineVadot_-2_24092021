@@ -86,6 +86,7 @@ footer {
 h1 {
     width: 90%;
     font-size: 1.5em;
+    margin: 0;
 }
 
 h2 {
@@ -98,7 +99,7 @@ h2 {
 h3 {
     width: 90%;
     font-size: 1em;
-    font-weight: bold;
+    font-weight: normal;
 }
 
 li {
@@ -119,6 +120,7 @@ a, a:visited {
     display: flex;
     align-items: center;
     justify-content: flex-start;
+    width: 100%;
     height: 30px;
 }
 
@@ -166,6 +168,20 @@ a, a:visited {
     border: 2px solid #F2F2F2;
     text-align: center;
     background-color: white;
+}
+
+.information{
+    width: 100%;
+    font-size: small;
+    margin-bottom: 10px;
+}
+
+.fa-info{
+    color: #0065FC;
+    border: 2px solid #F2F2F2;
+    padding: 5px;
+    border-radius:50px;
+    margin-right: 5px;
 }
 
 #rent, #popular, #activities{
@@ -375,27 +391,25 @@ a, a:visited {
     margin: 5px;
 }
 
-.rent-description {
-    height: 50%;
+.rent-description, .popular-description{
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    width: 90%;
 }
-
-.activities-description {
-    text-align: center;
-    height: 40px;
+.rent-description {
+    height: 50%;
+    width: 90%;
 }
 
 .popular-description {
     height: 100%;
     width: 60%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
     margin-left: 5%;
+}
 
+.activities-description {
+    text-align: center;
+    height: 40px;
 }
 
 .rent-link-more {
@@ -424,12 +438,10 @@ button:hover {
     color: #0065FC;
 }
 
-
 .link-more {
     justify-content: flex-end;
     width: 100%;
 }
-
 
 .blue {
     color: #0065FC;
