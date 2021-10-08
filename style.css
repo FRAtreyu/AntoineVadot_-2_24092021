@@ -85,7 +85,7 @@ footer {
 }
 
 h1 {
-    width: 90%;
+    width: 100%;
     font-size: 1.5em;
     margin: 0;
 }
@@ -195,11 +195,17 @@ button:hover {
 }
 
 .fa-info {
-    padding: 8px;
+    padding: 4px;
     margin-right: 5px;
     border: 2px solid #F2F2F2;
-    border-radius: 30px;
+    border-radius: 20px;
+    height: 15px;
+    width: 15px;
     color: #0065FC;
+}
+
+.fa-info::before{
+    padding: 5px;
 }
 
 #rent, #popular, #activities{
@@ -331,6 +337,10 @@ button:hover {
         align-items: flex-start;
     }
 
+    .activities-description{
+        height: unset;
+    }
+
     footer {
         width: 100%;
         display: flex;
@@ -379,13 +389,18 @@ button:hover {
     width: 100%;
 }
 
+.activities-item-box{
+    justify-content: space-between;
+}
+
 .rent-image-div {
     display: flex;
     height: 50%;
 }
 
 .activities-image-div {
-    height: 80%;
+    min-height: 60%;
+    height: 100%;
 }
 
 .popular-image-div {
@@ -431,8 +446,10 @@ button:hover {
 }
 
 .activities-description {
-    text-align: center;
-    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80px;
 }
 
 .rent-link-more {
