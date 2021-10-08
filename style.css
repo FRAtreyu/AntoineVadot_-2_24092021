@@ -44,11 +44,11 @@ footer {
 
 .logo {
     height: 50px;
+    order: 1;
 }
 
 .logo-div {
     width: 50%;
-
 }
 
 .menu-div {
@@ -64,6 +64,7 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
+    order: 1;
 }
 
 .inscription a {
@@ -150,8 +151,9 @@ a, a:visited {
 }
 
 .filter {
-    align-items: center;
+    align-items: flex-start;
     display: flex;
+    flex-direction: column;
     flex-wrap: wrap;
     margin: 15px 0 15px 0;
     width: 90%;
@@ -338,6 +340,11 @@ button:hover {
         background-color: #F2F2F2;
         margin-bottom: 30px;
 
+    }
+
+    .filter{
+        flex-direction: row;
+        align-items: center;
     }
 
 }
