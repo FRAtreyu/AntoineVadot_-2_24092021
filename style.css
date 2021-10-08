@@ -24,7 +24,7 @@ header, main, footer {
 header {
     justify-content: space-between;
     align-items: center;
-    height: 100px;
+    height: 15%;
 }
 
 
@@ -44,27 +44,34 @@ footer {
 
 .logo {
     height: 50px;
-    order: 1;
+
 }
 
 .logo-div {
     width: 50%;
 }
 
-.menu-div {
+.nav-div{
+
+    min-width: 320px;
     display: flex;
+    justify-content: center;
+    width: 100%;
+    order: 1;
+
 }
 
 .menu {
     display: flex;
     flex-direction: row;
+    justify-content: center;
 }
 
 .inscription {
     display: flex;
+    width: 10%;
     justify-content: center;
     align-items: center;
-    order: 1;
 }
 
 .inscription a {
@@ -74,13 +81,14 @@ footer {
 
 }
 
-.menu-link {
-    padding: 5px;
+.menu-link a{
+    padding-bottom:  10px;
+    border-bottom: 2px solid #F2F2F2;
+
 }
 
 .menu-link a:hover {
-    padding-top: 15px;
-    border-top: 2px solid #0065FC;
+    border-bottom: 2px solid #0065FC;
     color: #0065FC;
 }
 
@@ -357,6 +365,18 @@ button:hover {
         align-items: center;
     }
 
+    .nav-div{
+        order: 0;
+        justify-content: flex-end;
+        width: 35%;
+    }
+
+    .menu-link a:hover {
+        padding-top: 15px;
+        border-top: 2px solid #0065FC;
+        border-bottom: none;
+        color: #0065FC;
+    }
 }
 
 @media screen and (min-width: 1400px) {
