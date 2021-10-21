@@ -145,6 +145,7 @@ a, a:visited {
     display: none;
 }
 
+
 .fa-map-marker-alt {
     background-color: #F2F2F2;
     border-radius: 12px 0 0 12px;
@@ -419,14 +420,18 @@ button:hover {
         color: #0065FC;
     }
 
-    .fa-search{
+    .fas.fa-search{
         display: none;
     }
+
     .search-desktop{
-        visibility: visible;
+        display: flex;
     }
 }
 
+.fas.fa-chart-line{
+    padding-right: 15px;
+}
 
 .rent-item-link, .activities-item-link {
     display: flex;
