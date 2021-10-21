@@ -96,7 +96,7 @@ footer {
 h1 {
     width: 100%;
     font-size: 1.3em;
-    margin: 0;
+    margin: 15px 0;
 }
 
 h2 {
@@ -129,6 +129,7 @@ a, a:visited {
     justify-content: flex-start;
     width: 100%;
     height: 30px;
+    margin: 15px 0;
 }
 
 .search-button {
