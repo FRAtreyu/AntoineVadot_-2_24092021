@@ -94,9 +94,9 @@ footer {
 }
 
 h1 {
-    width: 100%;
+    width: 90%;
     font-size: 1.3em;
-    margin: 15px 0;
+    margin: 15px auto;
 }
 
 h2 {
@@ -110,6 +110,7 @@ h3 {
     width: 90%;
     font-size: 1em;
     font-weight: normal;
+    margin: auto;
 }
 
 
@@ -127,9 +128,9 @@ a, a:visited {
     display: flex;
     align-items: center;
     justify-content: flex-start;
-    width: 100%;
+    width: 90%;
     height: 30px;
-    margin: 15px 0;
+    margin: 15px auto;
 }
 
 .search-button {
@@ -174,7 +175,7 @@ a, a:visited {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    margin: 15px 0 15px 0;
+    margin: 15px auto;
     width: 90%;
 }
 
@@ -206,11 +207,11 @@ button:hover {
 
 .information {
     display: flex;
-    width: 100%;
+    width: 90%;
     font-size: small;
-    margin-bottom: 10px;
     align-items: center;
     height: 30px;
+    margin: 10px auto;
 }
 
 .fa-info {
@@ -394,6 +395,11 @@ button:hover {
         border-top: 2px solid #0065FC;
         border-bottom: none;
         color: #0065FC;
+    }
+
+    h1, h3, .search-form, .filter, .information{
+        margin-left: 0;
+        margin-right: 0;
     }
 }
 @media screen and (min-width: 426px) {
