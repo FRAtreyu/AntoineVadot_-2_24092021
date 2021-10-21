@@ -23,7 +23,7 @@ header, main, footer {
 }
 
 header {
-    justify-content: space-evenly;
+    justify-content: space-between;
     align-items: center;
     margin: auto;
     height: 15%;
@@ -71,7 +71,7 @@ footer {
 .inscription {
     display: flex;
     width: 10%;
-    justify-content: center;
+    justify-content: flex-end;
     align-items: center;
 }
 
